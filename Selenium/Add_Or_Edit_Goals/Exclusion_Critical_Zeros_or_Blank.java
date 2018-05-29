@@ -25,10 +25,6 @@ public class Exclusion_Critical_Zeros_or_Blank {
 		driver.findElement(By.xpath("//*[@id='btn_add']")).click();
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//a[@title='Edit Goals']")).click();
-		
-		/*Thread.sleep(5);
-		driver.findElement(By.xpath("//a[@title='Edit Goals']")).click();*/
-		
 		//driver.findElement(By.xpath("//input[@name='buisness_start_date']")).sendKeys("05/29/2018");
 		driver.findElement(By.xpath("//input[@name='goal1[3]']")).clear();
 		driver.findElement(By.xpath("//input[@name='goal1[3]']")).sendKeys("0");
