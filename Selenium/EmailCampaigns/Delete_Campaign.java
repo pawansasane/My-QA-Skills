@@ -29,7 +29,7 @@ public class Delete_Campaign {
 			Thread.sleep(3000);	//Wait for 3 seconds
 			driver.findElement(By.cssSelector("#iconsTemplate3242 > a:nth-child(5) > i")).click(); //Click on Email Campaign delete button. (Issue - Need to change CSS path every time after delete.)
 			driver.switchTo().alert().accept(); //Click 'OK' on browser alert
-			String actual_success = driver.findElement(By.xpath("//*[@id=\"successdiv\"]/div/div[2]/p")).getText(); //Line 26,27,28 - Verifies the success message.
+			String actual_success = driver.findElement(By.xpath("//*[@id=\"successdiv\"]/div/div[2]/p")).getText(); //Line 32,33,34 - Verifies the success message.
 			String expected_success = " Campaign is Deleted Successfully!";
 			Assert.assertTrue(expected_success, actual_success.contains(" Campaign is Deleted Successfully!"));
 			System.out.println(" Campaign is Deleted Successfully!");
